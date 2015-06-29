@@ -16,5 +16,7 @@ function Counter() {
 			self.emit('count', count);
 			++count;
 		},1000);
-	}
+	};
 }
+
+util.inherits(Counter, EventEmitter);
